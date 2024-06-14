@@ -28,3 +28,4 @@ jobs:
     - run: |
         touch .env
         echo "${{ secrets.PROVD_ENV_FILE_IN_NODEJS_PB_PIPELINE }}" > .env
+    - run: pm2 restart Frontend
